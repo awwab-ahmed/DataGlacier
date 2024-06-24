@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML API</title>
+</head>
+<body>
+    <div class="login">
+        <h1>Predict Stroke</h1>
+        <form action="{{url_for('predict')}}" method="post">
+            <input type="text" name="id" placeholder="Enter '0' for ID">
+            <br>
+            <input type="text" name="gender" placeholder="Enter '0' for male or '1' for female">
+            <br>
+            <input type="text" name="age">
+            <br>
+            <input type="text" name="hypertension" placeholder="Enter '0' for no and '1' for yes">
+            <br>
+            <input type="text" name="heart_disease" placeholder="Enter '0' for no and '1' for yes">
+            <br>
+            <input type="text" name="ever_married" placeholder="Enter 1 for 'Yes' or  0 for 'No'">
+            <br>
+            <input type="text" name="work_type" placeholder="Enter 1  for 'self-employed', 2 for 'private', or 3 for 'govt_job'">
+            <br>
+            <input type="text" name="Residence_type" placeholder="Enter 1 for 'urban' or 0 for 'rural'">
+            <br>
+            <input type="text" name="avg_glucose_level">
+            <br>
+            <input type="text" name="bmi">
+            <br>
+            <input type="text" name="smoking_status" placeholder="Enter 1 for 'never smoked', 2 for 'formerly smoked', 3 for 'smokes' or 4 for 'Unknown'">
+            <br>
+            <button type="submit" class="btn btn-primary btn-block btn-large"></button>
+        </form>
+        <br>
+        <br>
+        {{prediction_text}}
+    </div>
+</body>
+</html>
