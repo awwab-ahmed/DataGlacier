@@ -1,0 +1,20 @@
+file_type: csv
+dataset_name: healthcare-dataset-stroke-data
+file_name: healthcare-dataset-stroke-data
+table_name: healthcare-dataset-stroke-data
+inbound_delimiter: ","
+outbound_delimiter: "|"
+skip_leading_rows: 1
+columns: 
+    - id
+    - gender
+    - age
+    - hypertension
+    - heart_disease
+    - ever_married
+    - work_type
+    - Residence_type
+    - avg_glucose_level
+    - bmi
+    - smoking_status
+    - stroke
